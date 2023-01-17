@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Бурнис](https://up.htmlacademy.ru/htmlcss/36/user/1613791).
-* Наставник: `Неизвестно`.
+* Наставник: Татьяна Симоненко (https://htmlacademy.ru/profile/tatien)
 
 ---
 
