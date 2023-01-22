@@ -14,82 +14,88 @@
       <img src="img/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
     </a>
   </div>
-<nav class="site-navigation">
-  <ul class="main-menu">
-    <li class="main-menu-list"><a href="info.html">Главная</a></li>
-    <li class="main-menu-list"><a href="about.html">О Седоне</a></li>
-    <li class="main-menu-list"><a href="catalog.html">Гостиницы</a></li>
+<nav class="navigation">
+  <ul class="navigation-list">
+    <li class="navigation-item"><a class="navigation-link" href="info.html">Главная</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="about.html">О Седоне</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+  </ul>
+  <ul class="navigation-list navigation-user">
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">
+        <span class="visually-hidden">Поиск</span>
+      </a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">
+        <span class="visually-hidden">Избранное</span>
+      </a>
+    </li>
+      <li class="navigation-item">
+       <a class="button-navigation-user" href="#">ХОЧУ СЮДА!</a>
+      </li>
   </ul>
 </nav>
-<form class=" header-buttons">
-<div class="list-buttons">
-  <ul class=" buttons"->
-   <li class="button-1"><input class="search" type="image" src="#" alt="поиск"></li>
-   <li class="button-2"><input class="like" type="image" src="#" alt="поставь лайк"></li>
-   <li class="button-3"><input class="simple-button" type="button" value="ХОЧУ СЮДА!"></li>
-  </ul>
-</div>
-</form>
 </header>
-<main>
+<main class="index">
 <section class="about-sedona">
-     <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-    <div class="background-image">
+    <div class="about-background-image">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <img class="logo" src="#" alt="рекламные слоганы о седоне">
     </div>
       <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
       <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      <img class="foto-sedona" src="#" width="800px" height="384px" alt="улица города Седона">
+      <img class="foto-about-sedona" src="#" width="800px" height="384px" alt="улица города Седона">
     <ul class="features-sedona">
-      <li class="sedona-town">
+      <li class="features-sedona-town">
         <h3>Настоящий городок</h3>
         <span class="solid"></span>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </li>
-      <li class="sedona-town-litle">
+      <li class=" features-sedona-town-litle">
         <h3>Небольшая площадь </h3>
         <span class="solid"></span>
          <p>Все достопримечательности находятся очень близко</p>
       </li>
-      <li class="sedona-town-road">
+      <li class="features-sedona-town-road">
         <h3>Красивая дорога</h3>
           <span class="solid"></span>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="sedona-town-tourists">
+        <li class="features-sedona-town-tourists">
           <h3>Малo туристов</h3>
           <span class="solid"></span>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-        <li class="sedona-town-bridge">
+        <li class="features-sedona-town-bridge">
           <h3>Там есть мост дьявола</h3>
           <span class="solid"></span>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
     </ul>
-    <img class="sedona-foto-next" src="#" width="800px" height="385px" alt="мост дьявола">
+    <img class="about-sedona-foto-next" src="#" width="800px" height="385px" alt="мост дьявола">
 </section>
-<section class="features">
+<section class="advantages">
       <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
       <p>Опытный персонал и качественное обслуживание!</p>
-      <ul>
-        <li class="features-house">
+      <ul class="advantages-list">
+        <li class="advantages-item-house">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="features-food">
+        <li class="advantages-item-food">
           <h3>Еда</h3>
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="features-souvenirs">
+        <li class="advantages-item-souvenirs">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и настоящего местного производства!</p>
         </li>
       </ul>
-
     <article class="hotel-search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <input class="hotels" type="button" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">
+      <a class="button-search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
     </article>
   </section>
   </main>
@@ -109,7 +115,7 @@
        <li class="tg"><a href="https://t.me/htmlacademy"><img src="logo.tm" alt="телега"> </a></li>
        <li class="yt"><a href="https://youtube.com/user/htmlacademy"> <img src="you.tube" alt="ютуб"></a></li>
       </ul>
-     <span class="telefone">+7 (812) 812-12-12</span>
+     <a class="telefone" hre="tel:88128121212">+7 (812) 812-12-12</a>
      <span class="htmlacademy"><a><img src="https://htmlacademy.ru"></a></span>
   </div>
 </footer>
