@@ -48,18 +48,16 @@
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <img src="images/icons/breadcrumbs-home.svg">
+            <ol class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
                 <span class="visually-hidden">На главную</span>
               </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <img src="images/icons/breadcrumbs-arrow.svg">
-            </li>
-            <li class="breadcrumbs-item">
+            </ol>
+            <ol class="breadcrumbs-item breadcrumbs-arrow ">
+            </ol>
+            <ol class="breadcrumbs-item breadcrumbs-last">
               <span>Гостиницы</span>
-            </li>
+            </ol>
           </ul>
         </header>
         <section class="catalog-products">
@@ -106,7 +104,7 @@
               </ul>
             </fieldset>
             <div class="range">
-              <label class="range-title">Стоимость, руб
+              <label class="range-title">Стоимость, ₽:
                 <input class="range-input" type="range" name="price" min="0" max="9000" step="1000">9000
               </label>
             </div>
@@ -220,10 +218,11 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer-background-image-none">
-        <div class="main-footer-text main-footer-text-black">
+      <section class="main-footer-head">
+        <div class="main-footer-background-image background-image-none">
           <h2 class="main-footer-head-title">Подпишитесь на рассылку</h2>
-          <p class="main-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="main-footer-description">Только полезная информация и никакого спама,<br>
+            честное бойскаутское!</p>
 
           <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="newsletter-email">email</label>
@@ -232,7 +231,6 @@
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
         </div>
-      </div>
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Контакты</h2>
