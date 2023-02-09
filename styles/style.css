@@ -21,8 +21,7 @@ body {
 	line-height: 21px;
 	color: #000000;
 	background-color: #FFFFFF;
-	width: 1200px;
-	margin: 0 auto;
+
 }
 .visually-hidden {
 	position: absolute;
@@ -36,14 +35,32 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.wrapper {
+  width: 1200px;
+	margin: 0 auto;
+}
 
 .main-header {
 	background-color: #FFFFFF;
 	color: #000000;
   display: flex;
+  justify-content: space-between;
 }
 .navigation{
   display: flex;
+  justify-content: space-between;
+}
+.navigation-list{
+  display: flex;
+}
+.navigation-index {
+  width: 100px;
+}
+.navigation-about {
+  width: 114px;
+}
+.navigation-hotels{
+  width: 125px;
 }
 .navigation-link {
 	font-weight: 700;
@@ -62,7 +79,9 @@ li {
 	font-size: 20px;
 	line-height: 24px;
 }
-
+.navigation-user{
+  display: flex;
+}
 .button-navigation-link {
     width: 160px;
     height: 36px;
@@ -118,17 +137,18 @@ img.hero-welcome {
 .features-item {
 	width: 400px;
 	height: 384px;
+  padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .features-title {
 	width: 175px;
 	height: 56px;
-
 	text-transform: uppercase;
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
+  margin: 0 28px 30px;
 }
 
 .features-texts {
@@ -139,7 +159,7 @@ img.hero-welcome {
 }
 
 .features-rectangle {
-	display: block;
+  margin: 0 auto;
 	width: 60px;
 	height: 2px;
 }
@@ -154,6 +174,8 @@ img.hero-welcome {
 
 .features-description {
 	font-weight: 400;
+  margin: 0;
+  margin-top: 30px;
 }
 .features-image {
   width: 800px;
@@ -402,9 +424,7 @@ img.hero-welcome {
   padding-top: 0;
   text-align: center;
 }
-.breadcrumbs. .breadcrumbs-item:not(:last-child){
-  background: url("../images/icons/breadcrumbs-arrow.svg") no-repeat;
-}
+
 .catalog-filter-group {
   border: none;
   padding: 0 0;
