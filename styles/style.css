@@ -160,7 +160,7 @@ img.hero-welcome {
 
 .features-item {
 	width: 400px;
-	height: 384px;
+	min-height: 384px;
   padding: 102px 85px;
   box-sizing: border-box;
 }
@@ -203,6 +203,7 @@ img.hero-welcome {
 }
 .features-image {
   width: 800px;
+  display: flex;
 }
 .block-1,
 .block-7 {
@@ -290,7 +291,6 @@ img.hero-welcome {
 
 .hotel-search-text {
 	width: 592px;
-	height: 108px;
 	margin: 0 auto;
 }
 
