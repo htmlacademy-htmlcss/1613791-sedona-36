@@ -11,40 +11,45 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="page-container">
       <header class="main-header">
-        <div class="logo">
-          <a class="main-header-logo" href="index.html">
-            <img src="images/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
-          </a>
-        </div>
         <nav class="navigation">
+          <div class="logo">
+            <a class="main-header-logo" href="index.html">
+              <img src="images/logo.svg" width="170" height="70" alt="Логотип сайта городка Седона">
+            </a>
+          </div>
           <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <li class="navigation-item navigation-index ">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item navigation-about ">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item navigation-hotels">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
-                <img src="images/icons/search.svg">
+                <img src="images/icons/search.svg" width="20" height="20" alt="Поиск">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-link" href="#">
-                <img src="images/icons/heart.svg">
+                <img src="images/icons/heart.svg" width="20" height="20" alt="Избранное">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-button">
               <a class="button-navigation-link" href="#">ХОЧУ СЮДА!</a>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="main-inner">
+      <main class="main-inner main-container">
         <section class="catalog-filter-main">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -61,7 +66,7 @@
           </header>
           <section class="catalog-products">
             <h2 class="visually-hidden">Список гостиниц с фильтрацией</h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+            <form class="catalog-filter-forms" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
@@ -106,32 +111,34 @@
                 <label class="range-title">Стоимость, ₽:
                   <input class="range-input" type="range" name="price" min="0" max="9000" step="1000">9000
                 </label>
+                <button class="form-button button-submit" type="submit">Применить</button>
+                <input class="form-button button-reset" type="reset" value="Сбросить">
               </div>
-              <button class="form-button button-submit" type="submit">Применить</button>
-              <input class="form-button button-reset" type="reset" value="Сбросить">
             </form>
           </section>
         </section>
         <section class="searching-results-hotels">
-          <h2 class="visually-hidden">Результаты поиска</h2>
-          <h3 class="searching-results-title">Найдено гостиниц: 38</h3>
-          <select class="results-select-control">
-            <option value="cheap">Сначала дешевле</option>
-            <option value="expensive">Cначала дороже</option>
-            <option value="popular">Сначала популярное</option>
-          </select>
-          <a class="button-light" href="#">
-            <img class="light-icon" src="images/icons/view-cards.svg">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button-light" href="#">
-            <img class="light-icon" src="images/icons/view-signle.svg">
-            <span class="visually-hidden">Показать одиночную карточку</span>
-          </a>
-          <a class="button-light" href="#">
-            <img class="light-icon" src="images/icons/view-list.svg">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="wrapper">
+            <h2 class="visually-hidden">Результаты поиска</h2>
+            <h3 class="searching-results-title">Найдено гостиниц: 38</h3>
+            <select class="results-select-control">
+              <option value="cheap">Сначала дешевле</option>
+              <option value="expensive">Cначала дороже</option>
+              <option value="popular">Сначала популярное</option>
+            </select>
+            <a class="button-light" href="#">
+              <img class="light-icon" src="images/icons/view-cards.svg">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button-light" href="#">
+              <img class="light-icon" src="images/icons/view-signle.svg">
+              <span class="visually-hidden">Показать одиночную карточку</span>
+            </a>
+            <a class="button-light" href="#">
+              <img class="light-icon" src="images/icons/view-list.svg">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
           <ul class="hotel-card-list">
             <li class="hotel-card-item">
               <a class="hotel-card-link" href="#">
