@@ -32,13 +32,13 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-user-link" href="#">
                 <img src="images/icons/search.svg" width="20" height="20" alt="Поиск">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-user-link" href="#">
                 <img src="images/icons/heart.svg" width="20" height="20" alt="Избранное">
                 <span class="visually-hidden">Избранное</span>
               </a>
@@ -59,7 +59,7 @@
                   <span class="visually-hidden">На главную</span>
                 </a>
               </li>
-              <li class="breadcrumbs-item breadcrumbs-last">
+              <li class="breadcrumbs-item">
                 <span>Гостиницы</span>
               </li>
             </ul>
@@ -118,7 +118,7 @@
           </section>
         </section>
         <section class="searching-results-hotels">
-          <div class="wrapper">
+          <div class="sorter-container">
             <h2 class="visually-hidden">Результаты поиска</h2>
             <h3 class="searching-results-title">Найдено гостиниц: 38</h3>
             <select class="results-select-control">
@@ -126,18 +126,26 @@
               <option value="expensive">Cначала дороже</option>
               <option value="popular">Сначала популярное</option>
             </select>
-            <a class="button-light" href="#">
-              <img class="light-icon" src="images/icons/view-cards.svg">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a class="button-light" href="#">
-              <img class="light-icon" src="images/icons/view-signle.svg">
-              <span class="visually-hidden">Показать одиночную карточку</span>
-            </a>
-            <a class="button-light" href="#">
-              <img class="light-icon" src="images/icons/view-list.svg">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <ul class="button-light-list">
+              <li class="button-light-item">
+                <a class="button-light" href="#">
+                  <img class="light-icon" src="images/icons/view-cards.svg">
+                </a>
+                <span class="visually-hidden">Показать карточки</span>
+              </li>
+              <li class="button-light-item">
+                <a class="button-light" href="#">
+                  <img class="light-icon" src="images/icons/view-signle.svg">
+                  <span class="visually-hidden">Показать одиночную карточку</span>
+                </a>
+              </li>
+              <li class="button-light-item">
+                <a class="button-light" href="#">
+                  <img class="light-icon" src="images/icons/view-list.svg">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <ul class="hotel-card-list">
             <li class="hotel-card-item">
@@ -149,10 +157,12 @@
               <p class="hotei-card-price">От 4000 ₽</p>
               <a class="hotel-card-button button-info" href="#">Подробнее</a>
               <a class="hotel-card-button button-favorite" href="#">В Избранное</a>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+              <p>
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+              </p>
               <p class="hotel-card-rating">Рейтинг: 8,5</p>
             </li>
             <li class="hotel-card-item">
@@ -164,10 +174,12 @@
               <p class="hotel-card-price">От 5000 ₽</p>
               <a class="hotel-card-button button-info" href="#">Подробнее</a>
               <a class="hotel-card-button button-in-favorite" href="#">В Избранном</a>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+              <p>
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
+              </p>
               <p class="hotel-card-rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card-item">
@@ -179,9 +191,11 @@
               <p class="hotel-card-price">От 2500 ₽</p>
               <a class="hotel-card-button button-info" href="#">Подробнее</a>
               <a class="hotel-card-button button-favorite" href="#">В Избранное</a>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
+              <p>
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
+              </p>
               <p class="hotel-card-rating">Рейтинг: 6,9</p>
             </li>
             <li class="hotel-card-item">
@@ -193,9 +207,12 @@
               <p class="hotel-card-price">От 1500 ₽</p>
               <a class="hotel-card-button button-info" href="#">Подробнее</a>
               <a class="hotel-card-button button-favorite" href="#">В Избранное</a>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="2 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="2 звезды">
+              <p>
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="2 звезды">
+                <img class="hotel-card-stars" src="images/icons/star.svg" alt="2 звезды">
+              </p>
               <p class="hotel-card-rating">Рейтинг: 5,0</p>
+
             </li>
           </ul>
           <ul class="pagination">
@@ -257,12 +274,14 @@
               </a>
             </li>
           </ul>
-          <a class="phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-          <span class="developer">
+          <div class="phone">
+            <a class="phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
+          </div>
+          <div class="developer">
             <a href="https://htmlacademy.ru">
               <img src="images/html-academy.svg" alt="htmlacademy">
             </a>
-          </span>
+          </div>
         </section>
       </footer>
     </div>
