@@ -105,9 +105,11 @@
               </ul>
             </fieldset>
             <div class="range">
-              <label class="range-title">Стоимость, ₽:
+              <label class="range-title">Стоимость, ₽:<br>
                 <input class="range-input" type="range" name="price" min="0" max="9000" step="1000">9000
               </label>
+            </div>
+            <div class="range-button">
               <button class="form-button button-submit" type="submit">Применить</button>
               <input class="form-button button-reset" type="reset" value="Сбросить">
             </div>
@@ -151,13 +153,16 @@
             <p class="hotei-card-price">От 4000 ₽</p>
             <a class="hotel-card-button button-info" href="#">Подробнее</a>
             <a class="hotel-card-button button-favorite" href="#">В Избранное</a>
-            <p>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-            </p>
-            <p class="hotel-card-rating">Рейтинг: 8,5</p>
+            <div class="hotel-card-stars">
+              <p class="hotel-card-stars">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+              </p>
+              <p class="hotel-card-rating">Рейтинг: 8,5</p>
+            </div>
+
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
@@ -168,13 +173,15 @@
             <p class="hotel-card-price">От 5000 ₽</p>
             <a class="hotel-card-button button-info" href="#">Подробнее</a>
             <a class="hotel-card-button button-in-favorite" href="#">В Избранном</a>
-            <p>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="4 звезды">
-            </p>
-            <p class="hotel-card-rating">Рейтинг: 9,2</p>
+            <div class="hotel-card-stars">
+              <p class="hotel-stars">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="4 звезды">
+              </p>
+              <p class="hotel-card-rating">Рейтинг: 9,2</p>
+            </div>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
@@ -185,12 +192,14 @@
             <p class="hotel-card-price">От 2500 ₽</p>
             <a class="hotel-card-button button-info" href="#">Подробнее</a>
             <a class="hotel-card-button button-favorite" href="#">В Избранное</a>
-            <p>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="3 звезды">
-            </p>
-            <p class="hotel-card-rating">Рейтинг: 6,9</p>
+            <div class="hotel-card-stars">
+              <p class="hotel-stars">
+                <img class="stars" src="images/icons/star.svg" alt="3 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="3 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="3 звезды">
+              </p>
+              <p class="hotel-card-rating">Рейтинг: 6,9</p>
+            </div>
           </li>
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#">
@@ -201,12 +210,13 @@
             <p class="hotel-card-price">От 1500 ₽</p>
             <a class="hotel-card-button button-info" href="#">Подробнее</a>
             <a class="hotel-card-button button-favorite" href="#">В Избранное</a>
-            <p>
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="2 звезды">
-              <img class="hotel-card-stars" src="images/icons/star.svg" alt="2 звезды">
-            </p>
-            <p class="hotel-card-rating">Рейтинг: 5,0</p>
-
+            <div class="hotel-card-stars">
+              <p class="hotel-stars">
+                <img class="stars" src="images/icons/star.svg" alt="2 звезды">
+                <img class="stars" src="images/icons/star.svg" alt="2 звезды">
+              </p>
+              <p class="hotel-card-rating">Рейтинг: 5,0</p>
+            </div>
           </li>
         </ul>
         <ul class="pagination">
@@ -223,8 +233,8 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            ...
             <a class="pagination-link pagination-next" href="#">
+              ...
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
