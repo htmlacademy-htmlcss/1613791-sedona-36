@@ -247,7 +247,7 @@ img.hero-welcome {
   margin: 0;
   margin-top: 30px;
 }
-.features-image {
+.features-item-image {
   width: 800px;
   display: flex;
 }
@@ -690,11 +690,12 @@ img.hero-welcome {
 
 .hotel-card-list {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(3, 340px);
   grid-auto-flow: dense;
 }
 
@@ -705,11 +706,16 @@ img.hero-welcome {
   margin-right: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
 }
 
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
+  grid-column: 1/-1;
+  display: flex;
 }
 
 .hotel-card-image {
@@ -722,26 +728,43 @@ img.hero-welcome {
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
+  margin: 0;
 }
 
-.hotel-card-type, .hotel-card-price {
+.hotel-card-title-link {
+  grid-column: 1/-1;
+  display: block;
+}
+
+.hotel-card-price {
   color: #333333;
+  margin: 0;
+  justify-self: end;
+}
+
+.hotel-card-type {
+  color: #333333;
+  margin: 0;
+}
+
+.hotel-card-stars {
+padding: 10px 50px 10px 0;
+margin: 0;
 }
 
 .hotel-card-button {
-  font-family: "PT Sans", sans-serif;
-	border-radius: 4px;
+  width: 140px;
+  margin: 0;
 	padding: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
 	text-decoration: none;
 	color: white;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
-  width: 140px;
-  height: 36px;
-  display: inline-block;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -757,14 +780,11 @@ img.hero-welcome {
 	background: #7DB54F;
 }
 
-.hotel-card-stars {
-  display: flex;
-  justify-content: space-between;
-}
-
 .hotel-card-rating {
+  margin: 0;
+  padding: 9px 22px 8px 23px;
   width: 140px;
-  height: 37px;
+  box-sizing: border-box;
   background: #F2F2F2;
   border-radius: 4px;
   color: #333333;
@@ -772,9 +792,8 @@ img.hero-welcome {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
-  padding-top: 8px;
-  box-sizing: border-box;
 }
+
 .pagination {
   margin: 0;
   padding: 0;
