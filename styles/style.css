@@ -251,6 +251,13 @@ img.hero-welcome {
   width: 800px;
   display: flex;
 }
+
+.features-image {
+  display: block;
+  object-fit: cover;
+  background-color: #82B3D3;
+}
+
 .block-1,
 .block-7 {
 	color: #FFFFFF;
@@ -708,19 +715,24 @@ img.hero-welcome {
   border-radius: 4px;
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr min-content min-content min-content;
   gap: 16px 20px;
+  align-items: center;
 }
 
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
   grid-column: 1/-1;
-  display: flex;
 }
 
 .hotel-card-image {
-  max-width: 100%;
-  height: auto;
+  display: block;
+  width: 300px;
+  height: 212px;
+  margin-bottom: 16px;
+  object-fit: cover;
+  background-color: #82B3D3;
 }
 
 .hotel-card-title {
@@ -729,11 +741,6 @@ img.hero-welcome {
   line-height: 28px;
   text-decoration: none;
   margin: 0;
-}
-
-.hotel-card-title-link {
-  grid-column: 1/-1;
-  display: block;
 }
 
 .hotel-card-price {
@@ -748,7 +755,8 @@ img.hero-welcome {
 }
 
 .hotel-card-stars {
-padding: 10px 50px 10px 0;
+padding-top: 10px;
+padding-bottom: 10px;
 margin: 0;
 }
 
