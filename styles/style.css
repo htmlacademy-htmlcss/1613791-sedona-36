@@ -123,24 +123,30 @@ min-height: 64px;
   padding: 22px 12px;
 }
 
-.navigation-user-button {
-  margin-left: 20px;
-}
-
 .button-navigation-link {
-  width: 160px;
-  height: 36px;
-  background: #756157;
-  border-radius: 4px;
-  padding: 8px 0;
-  text-decoration: none;
-  color: white;
-  text-align: center;
   display: inline-block;
   box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 8px 34px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  text-align: center;
+  color:#FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .hero-background-image {
+  position: relative;
 	background-image: url('../images/index-background.jpg');
 	background-color: #3081b7;
 	color: #FFFFFF;
@@ -154,6 +160,12 @@ min-height: 64px;
   padding-left: 371px;
   padding-right: 371px;
   box-sizing: border-box;
+}
+
+.hero-divider {
+position: absolute;
+right: 0;
+bottom:0;
 }
 
 .main-footer-background-image {
@@ -371,15 +383,23 @@ img.hero-welcome {
 }
 
 .button-search {
-	background: #756157;
-	border-radius: 4px;
-	padding: 8px 50px;
-	text-decoration: none;
-	color: white;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 36px;
-	text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 50px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 36px;
+  text-align: center;
+  color:#FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main-footer-text {
@@ -419,18 +439,24 @@ img.hero-welcome {
 }
 
 .subscription-button {
-	padding: 8px 0;
-	background: #82B3D3;
-	border-radius: 0 4px 4px 0;
-	border: none;
-	width: 232px;
+  width: 232px;
 	height: 52px;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	font-weight: 700;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0 4px 4px 0;
+	padding: 8px 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
+	background-color: #82B3D3;
+	color: #FFFFFF;
+	text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer-social {
@@ -439,8 +465,8 @@ img.hero-welcome {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-social-list {
