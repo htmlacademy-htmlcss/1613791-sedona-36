@@ -6,7 +6,8 @@
   <meta name="keywords" content="Достопримечательности Седоны, Седона, гостиницы в Седоне.">
   <meta name="description" content="Сайт о городке Седона и поиск гостиниц в Седоне.">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="styles/style_test.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -31,11 +32,21 @@
           <ul class="navigation-user-list">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="catalog.html">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" viewBox="0 0 20 20">
+                  <path
+                    d="m18.5 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872C16.5 4.08 12.9.5 8.5.5s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z" />
+                </svg>
                 <span class="visually-hidden">Поиск гостиниц</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" viewBox="0 0 20 20">
+                  <path
+                    d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
                 <span class="navigation-user-link-added">12</span>
                 <span class="visually-hidden">Добавленные в избранное</span>
               </a>
@@ -63,8 +74,7 @@
           <li class="advantages-item-with-image">
             <div class="advantages-item-text-with-image">
               <div class="advantages-item-text-container">
-                <h3 class="advantages-item-text-title">Настоящий городок</h3>
-                <span class="advantages-rectangle rectangle-white"></span>
+                <h3 class="advantages-item-text-title advantages-rectangle-white">Настоящий городок</h3>
                 <p class="advantages-item-text-description">Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
@@ -77,8 +87,7 @@
           <li class="advantages-item">
             <div class="advantages-item-text">
               <div class="advantages-item-text-container">
-                <h3 class="advantages-item-text-title">Небольшая площадь</h3>
-                <span class="advantages-rectangle rectangle-grey"></span>
+                <h3 class="advantages-item-text-title advantages-rectangle-grey">Небольшая площадь</h3>
                 <p class="advantages-item-text-description">Все достопримечательности находятся очень близко</p>
               </div>
             </div>
@@ -86,8 +95,7 @@
           <li class="advantages-item  advantages-item-another-color">
             <div class="advantages-item-text">
               <div class="advantages-item-text-container">
-                <h3 class="advantages-item-text-title">Красивая дорога</h3>
-                <span class="advantages-rectangle rectangle-grey"></span>
+                <h3 class="advantages-item-text-title advantages-rectangle-grey">Красивая дорога</h3>
                 <p class="advantages-item-text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </div>
@@ -95,8 +103,7 @@
           <li class="advantages-item">
             <div class="advantages-item-text">
               <div class="advantages-item-text-container">
-                <h3 class="advantages-item-text-title">Малo туристов</h3>
-                <span class="advantages-rectangle rectangle-grey"></span>
+                <h3 class="advantages-item-text-title advantages-rectangle-grey">Малo туристов</h3>
                 <p class="advantages-item-text-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </div>
@@ -107,8 +114,7 @@
             </div>
             <div class="advantages-item-text-with-image">
               <div class="advantages-item-text-container">
-                <h3 class="advantages-item-text-title">Там есть мост дьявола</h3>
-                <span class="advantages-rectangle rectangle-white"></span>
+                <h3 class="advantages-item-text-title advantages-rectangle-white">Там есть<br>мост дьявола</h3>
                 <p class="advantages-item-text-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </div>
@@ -124,20 +130,22 @@
           <li class="originality-item">
             <div class="originality-item-text originality-item-housing">
               <h3 class="originality-item-title">Жильё</h3>
-              <p class="originality-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="originality-item-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </div>
           </li>
           <li class="originality-item">
             <div class="originality-item-text originality-item-food">
               <h3 class="originality-item-title">Еда</h3>
-              <p class="originality-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              <p class="originality-item-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
+                разочаруетесь!
               </p>
             </div>
           </li>
           <li class="originality-item">
             <div class="originality-item-text originality-item-souvenirs">
               <h3 class="originality-item-title">Сувениры</h3>
-              <p class="originality-item-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="originality-item-description">Не только китайского,<br>но и настоящего местного<br>производства!
+              </p>
             </div>
           </li>
         </ul>
