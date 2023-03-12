@@ -66,6 +66,11 @@ html {
   overflow: hidden;
 }
 
+.desabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 /*страница-header*/
 
 .page-header {
@@ -86,6 +91,15 @@ html {
   display: block;
   position: absolute;
   z-index: 1;
+}
+
+.logo[href]:hover,
+.logo[href]:focus {
+  opacity: 0,6;
+}
+
+.logo[href]:active {
+  opacity: 0,3;
 }
 
 .navigation-container {
@@ -607,11 +621,39 @@ min-height: 64px;
 .subscription-email {
 	width: 452px;
   margin: 0;
-	padding: 12px 20px;
+	padding: 9px 17px;
   font: inherit;
 	background: #F2F2F2;
 	border-radius: 4px 0 0 4px;
-	border: none;
+  border: 3px solid #F2F2F2;
+  box-sizing: border-box;
+}
+
+.subscription-email:invalid {
+  outline: 3px solid #FF5757;
+}
+
+.subscription-email:hover {
+  background: #E6E6E6;
+  border-color:#E6E6E6;
+}
+
+.subscription-email:focus {
+  background: #E6E6E6;
+  border-color:#E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.subscription-email:active {
+  border-color: #000000;
+  outline: none;
+}
+
+.subscription-email:disabled,
+.subscription-email:disabled:hover {
+  background: #E5E5E5;
+  border-color:#E5E5E5;
+  opacity: 0.3;
 }
 
 .subscription-email::placeholder {
@@ -619,20 +661,6 @@ min-height: 64px;
   opacity: 0.6;
   font-size: 18px;
 }
-
-/* .subscription-email:hover,
-.subscription-email:focus {
-  border: 2px solid #68A2CA;
-} */
-
-.subscription-email:focus {
-  outline: none;
-}
-
-/* .subscription-email:disabled,
-.subscription-email:disabled:hover {
-  border: 2px solid rgba(0, 0, 0, 0.3);
-} */
 
 .subscription-button {
   border-radius: 0 4px 4px 0;
@@ -723,14 +751,15 @@ min-height: 64px;
 }
 
 .phone-link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
 	font-size: 40px;
 	line-height: 40px;
-	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
-  width: 400px;
+  margin-left: 25px;
 }
 
 .phone-link:hover {
