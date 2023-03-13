@@ -525,11 +525,6 @@ min-height: 64px;
   background-color: #615048;
 }
 
-.button-hotel-search:focus {
-  background-color: #615048;
-  outline: none;
-}
-
 .button-hotel-search:active {
   color: rgba(255, 255, 255, 0.3);
 }
