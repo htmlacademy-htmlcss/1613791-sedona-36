@@ -93,8 +93,7 @@ html {
   z-index: 1;
 }
 
-.logo[href]:hover,
-.logo[href]:focus {
+.logo[href]:hover {
   opacity: 0,6;
 }
 
@@ -160,16 +159,6 @@ min-height: 64px;
   color: #756157;
 }
 
-.navigation-link:focus {
-  color: #756157;
-  outline: none;
-}
-
-.navigation-link:focus-visible {
-  color: #756157;
-  outline: none;
-}
-
 .navigation-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
@@ -212,32 +201,9 @@ min-height: 64px;
   fill: #756157;
 }
 
-.navigation-user-link:focus .navigation-icon {
-  fill: #756157;
-}
-
-.navigation-user-link:focus-visible {
-  fill: #756157;
-  outline: none;
-}
-
 .navigation-user-link:active .navigation-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
-
-/*
-.navigation-user-item:nth-child(1) .navigation-user-link {
-  background-image: url(../images/icons/search.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.navigation-user-item:nth-child(2) .navigation-user-link {
-  background-image: url(../images/icons/heart.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-*/
 
 .navigation-user-link-added {
   position: absolute;
@@ -283,11 +249,6 @@ min-height: 64px;
   background-color: #615048;
 }
 
-.navigation-user-link-button:focus {
-  background-color: #615048;
-  outline: none;
-}
-
 .navigation-user-link-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -328,6 +289,8 @@ min-height: 64px;
 .advantages-welcome-text {
   padding-top: 69px;
   padding-bottom: 69px;
+  padding-left: 274px;
+  padding-right: 274px;
   text-align: center;
   margin-bottom: 21px;
 }
@@ -337,16 +300,12 @@ min-height: 64px;
  font-size: 30px;
  line-height: 36px;
  text-transform: uppercase;
- padding-right: 290px;
- padding-left: 290px;
  margin: 0;
  margin-bottom: 25px;
 }
 
 .advantages-welcom-text-description {
  margin: 0;
- padding-left: 274px;
- padding-right: 274px;
  color: #333333;
 }
 
@@ -373,12 +332,12 @@ min-height: 64px;
 .advantages-item-text-with-image {
   box-sizing: border-box;
   padding: 102px 85px;
-  text-align: center;
 }
 
 .advantages-item-text-container {
   width: 230px;
   position: relative;
+  text-align: center;
 }
 
 .advantages-item-text-title {
@@ -386,7 +345,6 @@ min-height: 64px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  padding: 0 27px;
   margin: 0;
   margin-bottom: 62px;
 }
@@ -399,7 +357,7 @@ min-height: 64px;
   position: absolute;
   left: 85px;
   right: 85px;
-  bottom: 72px;
+  bottom: 93px;
 }
 
 .advantages-rectangle-grey::after {
@@ -452,12 +410,12 @@ min-height: 64px;
 .originality-welcome-text {
   padding-top: 64px ;
   padding-bottom: 64px;
+  padding-left: 347px;
+  padding-right: 347px;
   text-align: center;
 }
 
 .originality-welcom-text-title {
-  padding-left: 347px;
-  padding-right: 347px;
   margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -467,8 +425,6 @@ min-height: 64px;
 }
 
 .originality-welcom-text-description {
-  padding-right: 355px;
-  padding-left: 355px;
   margin: 0;
   color: #333333;
 }
@@ -539,7 +495,6 @@ min-height: 64px;
 }
 
 .hotel-search-title {
-  padding: 0 147px;
   margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -589,7 +544,7 @@ min-height: 64px;
 	background-image: url('../images/subscribe-fill.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #615048;
   padding: 96px 258px 104px;
   min-height: 415px;
   box-sizing: border-box;
@@ -674,11 +629,6 @@ min-height: 64px;
   background-color: #68A2CA;
 }
 
-.subscription-button:focus {
-  background-color: #68A2CA;
-  outline: none;
-}
-
 .subscription-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
@@ -737,43 +687,28 @@ min-height: 64px;
   fill: #68A2CA;
 }
 
-.footer-social-link:focus .social-icon {
-  fill: #68A2CA;
-  outline: none;
-}
-
-.footer-social-link:focus-visible {
-  outline: none;
-}
-
 .footer-social-link:active .social-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.phone-link {
+.phone-link-wrapper {
+  width: 332px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 25px;
+}
+
+.phone-link {
   font-weight: 400;
 	font-size: 40px;
 	line-height: 40px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
-  margin-left: 25px;
 }
 
 .phone-link:hover {
   color: #756157;
-}
-
-.phone-link:focus {
-  color: #756157;
-  outline: none;
-}
-
-.phone-link:focus-visible {
-  color: #756157;
-  outline: none;
 }
 
 .phone-link:active {
@@ -797,15 +732,6 @@ min-height: 64px;
 
 .developer-link:hover .developer {
   fill: #756157;
-}
-
-.developer-link:focus .developer {
-  fill: #756157;
-  outline: none;
-}
-
-.developer-link:focus-visible {
-  outline: none;
 }
 
 .developer-link:active .developer {
